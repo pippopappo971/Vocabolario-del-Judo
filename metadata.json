@@ -1,0 +1,6 @@
+{
+  "name": "Kodokan Kotoba",
+  "description": "Assistente lessicografico ed etimologico del Maestro 10° Dan per comprendere in italiano i concetti, i kanji e la biomeccanica delle tecniche del Judo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

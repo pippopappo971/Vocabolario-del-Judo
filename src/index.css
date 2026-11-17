@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-editorial: 'Cormorant Garamond', 'Noto Serif JP', Georgia, serif;
+    --font-kanji: 'Noto Serif JP', 'Cormorant Garamond', serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-editorial);
+  }
+
+  .font-kanji {
+    font-family: var(--font-kanji);
+  }
+
+  .font-mono-tech {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
